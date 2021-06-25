@@ -270,4 +270,8 @@ global_pred %>%
 
 ```
 
+### What are some of the genearl trends of the Covid19 pendemic, a large picture view?
+
+### We see that Covid19 recovers are higher then the deaths. The same trend is oberved in global and US datasets (visually the US dataset scale logarithmically in Y axes). We also see the same in the sate of virgina. The trend generally follows same for US and some of it's most populous states with new cases drops in US the states follow.
+
 ### In conclusion, we downloaded the raw data from Systems Science and Engineering (CSSE) at Johns Hopkins University Github repository. The dataframe was then cleaned and tidy to do further data analysis. Plotting the data from dataframe, we see the total cases vs deaths and new cases and deaths for both US and global datasets. An attempt was made to do with facet_wrap() function to create sub-plots of US states, however it's not very readable since the plot size does not scale. Finally, linear model was used to predict the cases per thousand as a function of deaths per thousand. Since this is a linear model, it's will not be very use to for prediction for this kind of datasets. As we know the real world is not linear and virus behave in a differnt manner, there are lot of factors at play, from indiviual immunity to factors such as lockdown, public behavior and sensivity to the pendamic, etc. The model does not account of any of this, it just does liner calcualtion based on the dataset. We can clearly see there is lot of outliers that are significent distance away from the prediction line.
